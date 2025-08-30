@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen p-6">
+  <h1 class="text-3xl font-bold mb-4 text-center">🎯 Goal Tracker</h1>
+  
+  <div class="mb-6 flex flex-col md:flex-row gap-4">
+    <input id="goalName" type="text" placeholder="Goal Name" class="p-2 rounded border flex-1">
+    <input id="goalDesc" type="text" placeholder="Description" class="p-2 rounded border flex-1">
+    <input id="goalDeadline" type="datetime-local" class="p-2 rounded border">
+    <button id="addGoalBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Goal</button>
+  </div>
+
+  <div id="goalsContainer" class="grid md:grid-cols-2 gap-4"></div>
+</body>
+  </html>
